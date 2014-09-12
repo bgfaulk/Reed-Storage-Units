@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>REED's Mini Storage</title>
+    <title>Reed Mini Storage</title>
+    <link rel="shortcut icon" href="assets/img/favicon_logo-20140912-favicon.ico" >
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -33,7 +34,14 @@
             $('#myTable').DataTable({
                 paging: false,
                 "searching": false,
-                "ordering": false
+                "ordering": false,
+                "info": false
+            });
+            $('#myTable2').DataTable({
+                paging: false,
+                "searching": false,
+                "ordering": false,
+                "info": false
             });
         });
     </script>
@@ -50,19 +58,62 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Reed's Mini Storage</a>
+            <a class="navbar-brand" href="index.html">Reed Mini Storage</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="priceList.html">Price List</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a data-toggle="modal" data-target="#myModal">Contact</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
     </div>
 </div>
 
+
+<!-- Modal -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Contact Reed Mini Storage</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row mt centered">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <table id="myTable2" class="stripe hover cell-border">
+                            <thead>
+                            <tr>
+                                <th>Contact Details</th>
+                                <th>Availability</th>
+                            </tr>
+                            </thead>
+                            <tbody class="dt-right">
+                            <tr>
+                                <td class="dt-left">1-501-882-6780</td>
+                                <td class="dt-left">Monday-Friday 8 to 5 and Saturday 8 to 1</td>
+                            </tr>
+                            <tr>
+                                <td class="dt-left">reedministoragellc@yahoo.com</td>
+                                <td class="dt-left">Anytime</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /row -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Modal Section -->
 
 <!-- +++++ Projects Section +++++ -->
 
@@ -108,7 +159,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h4>Reed's Mini Storage</h4>
+                <h4>Reed Mini Storage</h4>
 
                 <p>
                     reedministoragellc@yahoo.com<br/>
@@ -129,7 +180,7 @@
             <!-- /col-lg-4 -->
 
             <div class="col-lg-4">
-                <h4>About Reed's Mini Storage</h4>
+                <h4>About Reed Mini Storage</h4>
 
                 <p>10x20's for $59.00 a month. We will offer boat and rv storage for $20.00 a month and its
                     uncovered.
