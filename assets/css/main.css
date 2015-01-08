@@ -187,3 +187,7 @@ a:after {
 	font-size: 40px;
 	color: #1abc9c;
 }
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
